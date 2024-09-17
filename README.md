@@ -14,6 +14,7 @@ Diagrammes:
   2. Diagramme de classe
      [Diagramme_de _classe.pdf](https://github.com/user-attachments/files/17023602/Diagramme_de._classe.pdf)
 
+Technologies : HTML/CSS, JAVASCRIPT, PHP
 Deploiement en local : Ordinateur portable
 Deploiement en production : Github
      
