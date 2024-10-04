@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
     <!--Replace with your tailwind.css once created-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+    <script src="../tailwindcss.js"></script>
     <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
     <style>
       .gradient {
@@ -27,7 +28,7 @@
         <div class="pl-2 flex items-center">
           <a class="flex gap-1.5 toggleColour text-white no-underline hover:no-underline font-bold text-2xl font-serif lg:text-4xl" href="#">
             <!--Icon from: http://www.potlabicons.com/ -->
-            <img class="rounded-full" src="LOGOS/2.jfif" alt="logo" width="45px">
+            <img class="rounded-full" src="../LOGOS/2.jfif" alt="logo" width="45px">
             ESTRACK
           </a>
         </div>
@@ -84,7 +85,7 @@
         </div>
         <!--Right Col-->
         <div class="w-full md:w-3/5 py-6 text-center">
-          <img class="w-full md:w-4/5 z-50" src="images/img3.jpg" />
+          <img class="w-full md:w-4/5 z-50" src="../images/img3.jpg" />
         </div>
       </div>
     </div>
@@ -128,12 +129,12 @@
           </div>
           <div class="w-full sm:w-2/5 p-2">
             <!-- premiere image -->
-            <img src="images/15.png" alt="sat">
+            <img src="../images/15.png" alt="sat">
           </div>
         </div>
         <div class="flex flex-wrap flex-col-reverse sm:flex-row">
           <div class="w-full sm:w-1/2 p-6 mt-6">
-            <img src="images/connected.png" alt="world">
+            <img src="../images/connected.png" alt="world">
           </div>
           <div class="w-full sm:w-1/2 p-6 mt-32">
             <div class="align-middle">
