@@ -85,7 +85,7 @@
               <div class="ms-3 text-sm">
                 <label for="remember" class="font-medium text-gray-500 dark:text-gray-400">Se souvenir de moi</label>
               </div>
-              <a href="#" class="ms-auto text-sm font-medium text-pink-600 hover:underline dark:text-blue-500">Mot de passe oublié?</a>
+              <!-- <a href="#" class="ms-auto text-sm font-medium text-pink-600 hover:underline dark:text-blue-500">Mot de passe oublié?</a> -->
             </div>
             <button type="submit" class="bg-gradient-to-r from-[#d88259] to-[#d88259] shadow-lg mt-6 p-2 text-white 
             rounded-lg w-full hover:scale-105 hover:from-[#daae51] hover:to-[#d53369]  transition duration-300 

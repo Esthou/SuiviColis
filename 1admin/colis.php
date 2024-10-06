@@ -1,9 +1,9 @@
 <?php
 session_start(); 
 
-if(!isset($_SESSION['user'])) {
-  header('location: index.php');
-}
+// if(!isset($_SESSION['user'])) {
+//   header('location: index.php');
+// }
 
 include('../3includes/bdconnec.php');
 
@@ -64,9 +64,10 @@ $stm2 = $connexion->query('SELECT * FROM destinataire');
 <body>
 <header class="dashboard-header">
 <div class="container">
-    <h1 class="display-4">Dashboard Responsable</h1>
+    <!-- <h1 class="display-4">Dashboard Responsable</h1> -->
     <!-- <p class="lead">Suivi des colis AgencExpress</p> -->
 </div>
+    
 </header>
 <div class="container">
   <h1 class="text-center mt-5">Liste des Colis</h1>
@@ -140,16 +141,17 @@ $stm2 = $connexion->query('SELECT * FROM destinataire');
     </div>
   </div>
 
-  <table class="table table-bordered border-primary mt-3">
+  <table class="table table-bordered border-primary mt-3 px-2">
     <thead>
       <tr>
-        <th scope="col">N°</th>
-        <th scope="col">Nature</th>
-        <!-- <th scope="col">Numero de suivi</th> -->
-        <th scope="col">Expediteur</th>
-        <th scope="col">Destinataire</th>
-        <th scope="col">Destination</th>
-        <th scope="col">Date d'enregistrement</th>
+        <th class="py-3 px-16" scope="col">N°</th>
+        <th class="py-3 px-3" scope="col">Nature</th>
+        <!-- <th scope="col">Numero de suivi</th> --> 
+        <th class="py-3 "  scope="col">Expediteur</th>
+        <th class="py-3 px-3"  scope="col">Destinataire</th>
+        <th class="py-3 px-20"  scope="col">Destination</th>
+        <th class="py-3 px-20"  scope="col">Date d'enregistrement</th>
+        <th class="py-3 px-20"  scope="col">Operation</th>
       </tr>
     </thead>
     <tbody>
@@ -164,7 +166,27 @@ $stm2 = $connexion->query('SELECT * FROM destinataire');
         <th scope="col"><?php echo $colis['nom_destinataire']; ?></th>
         <th scope="col"><?php echo $colis['destination']; ?></th>
         <th scope="col"><?php echo $colis['dateenreg']; ?></th>
+        <th scope="col">
+        <a href="modifier.php?id=<?=$row['id']?>"><img src="../images/pen.png" style="height: 25px"></a>
+        <a href="supprimer.php?id=<?=$row['id']?>"><img src="../images/trash.png" style="height: 25px"></a>       
+        
+        
+        
+        <!-- <a style="text-decoration: none;" href="update_user.php?id_user=<?php echo $intern['idutilisateur']; ?>">
+                  <i title="cliquez pour modifier les infos de ce stagiaire" class="fa fa-pencil-square-o ms-2" aria-hidden="true"></i>
+                  </a>
+                  <?php /*le dir as uniquement l'access*/
+                  //if($_SESSION['user']['role'] == 'dir') {?>
+   <a style="text-decoration: none;  color: red;" onclick="confirm('Etes-vous sur de vouloir supprimer ce stagiaire ?')"  href="#">
+                  <i title="cliquez pour supprimer ce stagiaire" class="fa fa-trash-o" aria-hidden="true"></i>
+                  </a>
+                
+                  <?php //} ?> -->
+  
+                
+              </th>
       </tr>
+      
       <?php $i++; } ?>
     </tbody>
 

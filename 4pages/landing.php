@@ -85,7 +85,7 @@
         </div>
         <!--Right Col-->
         <div class="w-full md:w-3/5 py-6 text-center">
-          <img class="w-full md:w-4/5 z-50" src="../images/img3.jpg" />
+          <img class="w-full md:w-4/5 z-50 ml-24 rounded" src="../images/img3.jpg" />
         </div>
       </div>
     </div>
